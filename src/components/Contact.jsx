@@ -40,7 +40,7 @@ const Contact = () => {
           <div className="flex flex-col">
             <label htmlFor="userMessage">Mesajınız</label>
             <textarea
-              className="py-4 px-3 rounded-lg hover:shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] transition-all resize-none h-40 md:h-48"
+              className="py-3 px-2 rounded-lg hover:shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] transition-all resize-none h-40 md:h-48"
               name="userMessage"
               id="userMessage"
               placeholder="mesajınızı yazın"
