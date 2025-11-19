@@ -1,4 +1,4 @@
-import React from "react";
+
 import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -27,6 +27,8 @@ const App = () => {
             <Courses />
           </div>
 
+       
+
           <div id="reviews">
             <Reviews />
           </div>
@@ -36,7 +38,7 @@ const App = () => {
           </div>
         </main>
 
-        <Footer/>
+        <Footer />
       </div>
     </Router>
   );

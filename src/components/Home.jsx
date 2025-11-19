@@ -6,13 +6,12 @@ import { useState, useEffect } from "react";
 const Home = () => {
   const [offsetValue, setOffsetValue] = useState(-100);
 
-  // Responsive offset ayarı
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
-        setOffsetValue(-100); // Desktop navbar yüksekliği
+        setOffsetValue(-100);
       } else {
-        setOffsetValue(-120); // Mobil navbar yüksekliği ve biraz ekstra boşluk
+        setOffsetValue(-120);
       }
     };
 

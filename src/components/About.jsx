@@ -1,7 +1,7 @@
 import img from "../assets/about.svg";
-import Button from "../layout/Button";
+import Accordion from "../layout/Accordion";
+
 import Heading from "../layout/Heading";
-import { Link } from "react-scroll";
 
 const About = () => {
   return (
@@ -16,10 +16,31 @@ const About = () => {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate
           molestiae consequuntur iste placeat recusandae qui nesciunt possimus.
         </p>
-
-        <Link to="contact" spy={true} smooth={true} duration={500}>
-          <Button title="Bize Ulaşın" />
-        </Link>
+        <div className="w-full  px-2">
+          <h2 className=" text-brightGreen mb-4 text-xl">
+            <span className="text-black ">Sizlere Neler</span> Sunuyoruz
+          </h2>
+          <Accordion
+            title="Yirmi Yıllık Tecrübe İle Özel Ders"
+            answer="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate
+          molestiae consequuntur iste placeat recusandae qui nesciunt possimus."
+          />
+          <Accordion
+            title="İster Online İster Yüz Yüze Eğitim"
+            answer="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate
+          molestiae consequuntur iste placeat recusandae qui nesciunt possimus."
+          />
+          <Accordion
+            title="Sınav Müfredatına Uygun İçerik"
+            answer="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate
+          molestiae consequuntur iste placeat recusandae qui nesciunt possimus."
+          />
+          <Accordion
+            title="İlköğretimden KPSS'ye Kadar Her Seviye"
+            answer="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate
+          molestiae consequuntur iste placeat recusandae qui nesciunt possimus."
+          />
+        </div>
       </div>
     </div>
   );
